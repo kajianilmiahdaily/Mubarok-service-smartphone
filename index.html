@@ -4,49 +4,49 @@
     <meta charset="UTF-8">
     <title>Belajar Deploy Pertama</title>
     <style>
-    body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        margin-top: 0;
-        /* Background Image Properties */
-        background-image: url('Flux_Dev_stack_of_large_ancient_Islamic_books_on_wooden_desk_w_3.jpg');
-        background-size: cover; /* Membuat gambar menutupi seluruh area */
-        background-position: center center; /* Memposisikan gambar di tengah */
-        background-repeat: no-repeat; /* Mencegah gambar berulang */
-        background-attachment: fixed; /* Membuat gambar tetap saat discroll */
-        min-height: 100vh; /* Memastikan body setidaknya setinggi viewport */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative; /* Diperlukan untuk overlay */
-        color: white; /* Mengubah warna teks agar terlihat di atas gambar gelap */
-    }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 0;
+            /* Background Image Properties */
+            background-image: url("Flux_Dev_stack_of_large_ancient_Islamic_books_on_wooden_desk_w_3.jpg");
+            background-size: cover; /* Membuat gambar menutupi seluruh area */
+            background-position: center center; /* Memposisikan gambar di tengah */
+            background-repeat: no-repeat; /* Mencegah gambar berulang */
+            background-attachment: fixed; /* Membuat gambar tetap saat discroll */
+            min-height: 100vh; /* Memastikan body setidaknya setinggi viewport */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative; /* Diperlukan untuk overlay */
+            color: white; /* Mengubah warna teks agar terlihat di atas gambar gelap */
+        }
 
-    /* Overlay untuk transparansi */
-    body::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.7); /* Hitam dengan opasitas 70% (membuat gambar 30% terlihat) */
-        z-index: -1; /* Memastikan overlay di belakang konten */
-    }
+        /* Overlay untuk transparansi */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Hitam dengan opasitas 70% (membuat gambar 30% terlihat) */
+            z-index: -1; /* Memastikan overlay di belakang konten */
+        }
 
-    h1 {
-        color: white; /* Pastikan judul tetap putih */
-        font-size: 3em;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Tambah bayangan agar lebih terbaca */
-    }
+        h1 {
+            color: white; /* Pastikan judul tetap putih */
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Tambah bayangan agar lebih terbaca */
+        }
 
-    p {
-        color: white; /* Pastikan paragraf tetap putih */
-        font-size: 1.5em;
-        text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Tambah bayangan agar lebih terbaca */
-    }
-   </style>
+        p {
+            color: white; /* Pastikan paragraf tetap putih */
+            font-size: 1.5em;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Tambah bayangan agar lebih terbaca */
+        }
+    </style>
 </head>
 <body>
     <h1>Website Pertamaku</h1>
