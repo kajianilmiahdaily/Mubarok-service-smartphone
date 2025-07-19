@@ -7,44 +7,47 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin-top: 0;
-            /* Background Image Properties */
-            background-image: url("Flux_Dev_stack_of_large_ancient_Islamic_books_on_wooden_desk_w_3.jpg");
-            background-size: cover; /* Membuat gambar menutupi seluruh area */
-            background-position: center center; /* Memposisikan gambar di tengah */
-            background-repeat: no-repeat; /* Mencegah gambar berulang */
-            background-attachment: fixed; /* Membuat gambar tetap saat discroll */
-            min-height: 100vh; /* Memastikan body setidaknya setinggi viewport */
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            position: relative; /* Diperlukan untuk overlay */
-            color: white; /* Mengubah warna teks agar terlihat di atas gambar gelap */
+            position: relative;
+            color: white;
         }
 
-        /* Overlay untuk transparansi */
+        /* Background dengan transparansi 70% (opacity 0.3) */
         body::before {
             content: "";
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.3); /* Hitam dengan opasitas 70% (membuat gambar 30% terlihat) */
-            z-index: -1; /* Memastikan overlay di belakang konten */
+            background-image: url("Flux_Dev_stack_of_large_ancient_Islamic_books_on_wooden_desk_w_3.jpg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            opacity: 0.3; /* Ini membuat gambar 30% terlihat (70% transparan) */
+            z-index: -1;
         }
 
         h1 {
-            color: white; /* Pastikan judul tetap putih */
+            color: #333; /* Warna gelap karena background sudah transparan */
             font-size: 3em;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Tambah bayangan agar lebih terbaca */
+            text-shadow: 2px 2px 4px rgba(255,255,255,0.8); /* Bayangan putih untuk kontras */
+            margin-bottom: 20px;
         }
 
         p {
-            color: white; /* Pastikan paragraf tetap putih */
+            color: #444; /* Warna gelap karena background sudah transparan */
             font-size: 1.5em;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Tambah bayangan agar lebih terbaca */
+            text-shadow: 1px 1px 3px rgba(255,255,255,0.6); /* Bayangan putih untuk kontras */
+            max-width: 600px;
+            line-height: 1.6;
         }
     </style>
 </head>
