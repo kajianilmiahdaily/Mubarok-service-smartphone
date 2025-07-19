@@ -4,55 +4,44 @@
     <meta charset="UTF-8">
     <title>Ngaji Mudah</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            color: white;
-        }
-
-        /* Background dengan transparansi 70% (opacity 0.3) */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url("Flux_Dev_stack_of_large_ancient_Islamic_books_on_wooden_desk_w_3.jpg");
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            opacity: 0.6; /* Ini membuat gambar 30% terlihat (70% transparan) */
-            z-index: -1;
-        }
-
-        h1 {
-            color: black; /* Warna gelap karena background sudah transparan */
-            font-size: 3em;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Bayangan putih untuk kontras */
-            margin-bottom: 20px;
-        }
-
-        p {
-            color: black; /* Warna gelap karena background sudah transparan */
-            font-size: 1.5em;
-            text-shadow: 1px 1px 3px rgba(255,255,255,0.6); /* Bayangan putih untuk kontras */
-            max-width: 600px;
-            line-height: 1.6;
-        }
+        /* Style dasar akan kita tambahkan nanti */
     </style>
 </head>
 <body>
-    <h1>Biar Ngaji Mudah</h1>
-    <p>In Syaa Allah Bantu Kamu Agar Mudah Jalani Kewajibanmu</p>
+    <header>
+        <div class="logo">
+            <a href="#">NGAJI</a>
+            <a href="#">biar MUDAH</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Aqidah</a></li>
+                <li><a href="#">Manhaj</a></li>
+                <li><a href="#">Ebook</a></li>
+                <li><a href="#">Bantahan</a></li>
+            </ul>
+        </nav>
+        <div class="social-search">
+            <a href="#">FB</a>
+            <a href="#">IG</a>
+            <a href="#">YT</a>
+            <a href="#">Search</a>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <h1>Biar Ngaji Mudah</h1>
+        <p>In Syaa Allah Bantu Kamu Agar Mudah Jalani Kewajibanmu</p>
+        
+        <!-- SUB TOPIK BARU DITAMBAHKAN DI SINI -->
+        <div class="sub-topics">
+            <a href="#" class="topic">Akidah</a>
+            <a href="#" class="topic">Adab</a>
+            <a href="#" class="topic">Fikih</a>
+            <a href="#" class="topic">Hadist</a>
+            <a href="#" class="topic">Sirah</a>
+        </div>
+    </div>
 </body>
 </html>
